@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useCart } from "@/context/CartContext"; // Asegúrate de importar tu contexto
+import { useCart } from "@/context/CartContext"; 
 function BtnOpenSideBar() {
     const { isOpen,setIsOpen,totalItems } = useCart();
 
