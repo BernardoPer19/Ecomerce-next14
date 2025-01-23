@@ -43,7 +43,7 @@ export interface Meta {
 export interface Review {
     rating:        number;
     comment:       string;
-    date:          string; // Deja como string si no conviertes directamente a Date
+    date:          string; 
     reviewerName:  string;
     reviewerEmail: string;
 }
