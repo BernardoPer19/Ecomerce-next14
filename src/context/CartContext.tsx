@@ -9,12 +9,12 @@ import React, {
 import { CartInputType, CartType } from "@/types/CartTypes";
 import { useCartHook } from "@/hooks/useCart";
 
-// Tipos para los props de los children
+
 interface ChildrenType {
   children: React.ReactNode;
 }
 
-// Tipos para el contexto
+
 interface ContextTypes {
   cart: CartType[];
   addToCart: (product: CartInputType) => void;
@@ -45,7 +45,7 @@ export const CartProvider = ({ children }: ChildrenType) => {
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
 
-// Hook para usar el contexto en otros componentes
+
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
