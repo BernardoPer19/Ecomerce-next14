@@ -11,7 +11,7 @@ async function CardProduct() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {products.map((product) => {
-        // Creamos un objeto de tipo CartInputType con solo las propiedades necesarias
+        
         const cartProduct: CartInputType = {
           id: product.id,
           title: product.title,
@@ -39,7 +39,7 @@ async function CardProduct() {
               <p className="text-gray-800 font-bold text-lg mb-4">
                 ${product.price}
               </p>
-              {/* Pasa solo las propiedades necesarias */}
+          
               <ProductButton product={cartProduct} />
               <ProdView item={product.id}/>
             </div>
