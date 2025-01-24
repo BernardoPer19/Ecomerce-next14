@@ -14,10 +14,7 @@ interface ChildrenType {
   children: React.ReactNode;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 581ce3a2bfd77ad8bfc813ef460c382c57ea6a3d
 interface ContextTypes {
   cart: CartType[];
   addToCart: (product: CartInputType) => void;
