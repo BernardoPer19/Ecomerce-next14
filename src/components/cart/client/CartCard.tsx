@@ -3,7 +3,7 @@
 import { useCart } from "@/context/CartContext";
 import React from "react";
 import BtnDeleteToCart from "./BtnDeleteToCart";
-import ProdView from "./ProdView";
+import ProdView from "../../products/client/ProdView";
 
 function CartCard() {
   const { cart } = useCart();
@@ -29,10 +29,7 @@ function CartCard() {
 
               <p className="font-bold">${item.price.toFixed(2)}</p>
 
-              <div className="flex gap-7">
               <BtnDeleteToCart item={item.id} />
-              <ProdView item={item.id}/>
-              </div>
             </li>
           ))}
         </ul>
