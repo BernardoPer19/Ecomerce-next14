@@ -9,4 +9,4 @@ export interface CartType {
   image: string;
 }
 
-export type CartInputType = Omit<CartType, "id">;
+export type CartInputType = Omit<CartType, "aa">;

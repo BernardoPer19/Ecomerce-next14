@@ -12,6 +12,7 @@ async function CardProduct() {
       {products.map((product) => {
         // Creamos un objeto de tipo CartInputType con solo las propiedades necesarias
         const cartProduct: CartInputType = {
+          id: product.id,
           title: product.title,
           price: product.price,
           category: product.category,

@@ -2,7 +2,7 @@
 import { useCart } from "@/context/CartContext";
 import React from "react";
 import BtnCloseSidebar from "./BtnCloseSidebar";
-import CartProdctList from "./CartProdctList";
+import CartProdctList from "./CartCard";
 
 function SidebarDataContainer() {
     

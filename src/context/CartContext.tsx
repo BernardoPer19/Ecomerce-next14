@@ -14,7 +14,6 @@ interface ChildrenType {
   children: React.ReactNode;
 }
 
-// Tipos para el contexto
 interface ContextTypes {
   cart: CartType[];
   addToCart: (product: CartInputType) => void;

@@ -1,12 +1,15 @@
 "use client";
 
 import { useCart } from "@/context/CartContext";
+import React from "react";
+import BtnDeleteToCart from "./BtnDeleteToCart";
+import ProdView from "./ProdView";
 
-function CartProdctList() {
+function CartCard() {
   const { cart } = useCart();
 
   return (
-    <div className="p-5">
+    <div>
       {cart.length === 0 ? (
         <p className="text-center text-gray-800">El carrito está vacío.</p>
       ) : (
@@ -25,6 +28,11 @@ function CartProdctList() {
               </div>
 
               <p className="font-bold">${item.price.toFixed(2)}</p>
+
+              <div className="flex gap-7">
+              <BtnDeleteToCart item={item.id} />
+              <ProdView item={item.id}/>
+              </div>
             </li>
           ))}
         </ul>
@@ -33,4 +41,4 @@ function CartProdctList() {
   );
 }
 
-export default CartProdctList;
+export default CartCard;

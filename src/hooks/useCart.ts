@@ -16,8 +16,7 @@ export const useCartHook = () => {
             : item
         );
       } else {
-        const newId = prevItem.length + 1;
-        return [...prevItem, { id: newId, ...product }];
+        return [...prevItem,  {...product} ];
       }
     });
   };
