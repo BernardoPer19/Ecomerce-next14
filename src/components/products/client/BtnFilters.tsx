@@ -2,6 +2,9 @@
 import React from "react";
 
 const FilterComponent = () => {
+
+
+
   return (
     <div className="py-8 bg-gray-100">
       <div className="container mx-auto px-4">

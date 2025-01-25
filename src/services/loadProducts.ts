@@ -10,3 +10,17 @@ export async function fetchProducts(): Promise<ProductType[]> {
   const data = await res.json()
   return data.products as ProductType[]
 }
+
+
+
+
+export async function loadProdID(id: number): Promise<ProductType> {
+  const res = await fetch(`https://dummyjson.com/products/${id}`, {
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error("Error fetching product data");
+  }
+  const data = await res.json();
+  return data;
+}

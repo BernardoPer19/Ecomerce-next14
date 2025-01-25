@@ -2,7 +2,8 @@ import { fetchProducts } from "@/services/loadProducts";
 import { CartInputType } from "@/types/CartTypes";
 import { ProductType } from "@/types/ProductTypes";
 import React from "react";
-import ProductButton from "../client/BtunAddToCart";
+import ProductButton from "../../cart/client/BtunAddToCart";
+import ProdView from "../client/ProdView";
 
 async function CardProduct() {
   const products: ProductType[] = await fetchProducts();
@@ -40,6 +41,7 @@ async function CardProduct() {
               </p>
               {/* Pasa solo las propiedades necesarias */}
               <ProductButton product={cartProduct} />
+              <ProdView item={product.id}/>
             </div>
           </div>
         );

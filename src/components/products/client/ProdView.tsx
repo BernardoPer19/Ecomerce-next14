@@ -9,7 +9,7 @@ interface PropsCart {
 function ProdView({item}:PropsCart) {
   return (
     <>
-        <Link href={`/products/${item}`}>
+        <Link href={`/${item}`}>
             Ver Mas
           </Link>
     </>
